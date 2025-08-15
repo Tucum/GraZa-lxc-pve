@@ -1,4 +1,10 @@
-# Proxmox LXC containers must be PRIVILEGED for ZeroTier to function correctly
+## Requirements
+
+Before using the `install-zerotier-debian12.sh` script, make sure you have:
+
+1. A Proxmox LXC container that is **PRIVILEGED**.
+2. A **ZeroTier account** created on the ZeroTier platform.
+3. A **ZeroTier network** created on the platform, so you can insert its **Network ID** into the script.
 
 # Edit the container's .conf file in /etc/pve/lxc/ and add the following lines:
 lxc.cgroup2.devices.allow = c 10:200 rwm
