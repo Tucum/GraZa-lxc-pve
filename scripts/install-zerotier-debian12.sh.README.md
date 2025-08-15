@@ -1,12 +1,13 @@
 ## Requirements
 
-Before using the `install-zerotier-debian12.sh` script, make sure you have:
+Before using the `install-zerotier-debian12.sh` script, ensure:
 
+1. A **ZeroTier account** created on the ZeroTier platform.
+2. A **ZeroTier network** created on the platform, so you can insert its **Network ID** into the script.
+
+If you are installing ZeroTier in a Proxmox LXC container, ensure:
 1. A Proxmox LXC container that is **PRIVILEGED**.
-2. A **ZeroTier account** created on the ZeroTier platform.
-3. A **ZeroTier network** created on the platform, so you can insert its **Network ID** into the script.
-
-## Edit the container's .conf file in /etc/pve/lxc/ and add the following lines:
+2. You have edited the container's .conf file in /etc/pve/lxc/ and added the following lines:
 ```bash
 lxc.cgroup2.devices.allow = c 10:200 rwm
 lxc.hook.autodev = sh -c "modprobe tun; cd ${LXC_ROOTFS_MOUNT}/dev; mkdir net; mknod net/tun c 10 200; chmod 0666 net/tun"
