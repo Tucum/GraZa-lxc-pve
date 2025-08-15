@@ -1,6 +1,6 @@
 #!/bin/bash
 
-wget -P /opt https://download.zerotier.com/RELEASES/1.14.2/dist/debian/bookworm/zerotier-one_1.14.2_amd64.deb
+https://download.zerotier.com/RELEASES/1.14.2/dist/debian/bookworm/zerotier-one_1.14.2_amd64.deb
 
 dpkg -i zerotier-one_1.14.2_amd64.deb
 
@@ -13,7 +13,7 @@ zerotier-cli join <networkID>
 
 #Leaving a ZeroTier Network
 #zerotier-cli leave <networkID>
-rm -rf /opt/zerotier-one*
+rm -rf zerotier-one*
 
 #ZeroTier CLI Commands
 #zerotier-cli status
