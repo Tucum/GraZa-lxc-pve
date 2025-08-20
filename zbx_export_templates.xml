@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zabbix_export>
+    <version>7.4</version>
+    <template_groups>
+        <template_group>
+            <uuid>846977d1dfed4968bc5f8bdb363285bc</uuid>
+            <name>Templates/Operating systems</name>
+        </template_group>
+    </template_groups>
+    <templates>
+        <template>
+            <uuid>050e10b522db4b09b91cb54603bd3c67</uuid>
+            <template>Template Linux Container</template>
+            <name>Template Linux Container</name>
+            <templates>
+                <template>
+                    <name>Linux by Zabbix agent</name>
+                </template>
+            </templates>
+            <groups>
+                <group>
+                    <name>Templates/Operating systems</name>
+                </group>
+            </groups>
+        </template>
+    </templates>
+</zabbix_export>
