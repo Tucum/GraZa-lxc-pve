@@ -88,7 +88,9 @@ locale
 systemctl restart zabbix-server zabbix-agent apache2
 
 #RESOLVER ERRO MEMORIA
-#wget https://raw.githubusercontent.com/kvaps/zabbix-linux-container-template/master/zabbix_container.conf -O /etc/zabbix/zabbix_agentd.d/zabbix_container.conf
+wget https://raw.githubusercontent.com/kvaps/zabbix-linux-container-template/refs/heads/master/zabbix_container.conf -O /etc/zabbix/zabbix_agentd.d/zabbix_container.conf
+
+systemctl restart zabbix-agent.service
 
 #importar template do agent do zabbix
 #alterar configuração do widget do dashboard principal para ct.memory.size[pused]
