@@ -1,6 +1,6 @@
 #!/bin/bash
 
-https://download.zerotier.com/RELEASES/1.14.2/dist/debian/bookworm/zerotier-one_1.14.2_amd64.deb
+wget https://download.zerotier.com/RELEASES/1.14.2/dist/debian/bookworm/zerotier-one_1.14.2_amd64.deb
 
 dpkg -i zerotier-one_1.14.2_amd64.deb
 
