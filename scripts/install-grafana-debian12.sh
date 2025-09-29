@@ -24,8 +24,9 @@ apt-get install grafana -y
 /bin/systemctl start grafana-server
 
 # Acessar http://localhost:3000
-# login: admin
+# login: Admin
 # senha: admin
+# depois do primeiro acesso vai pedir pra trocar a senha
 
 # Instalar o plugin para integrar com o zabbix
 grafana-cli plugins install alexanderzobnin-zabbix-app
