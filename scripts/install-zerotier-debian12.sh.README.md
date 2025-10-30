@@ -7,7 +7,8 @@ Before using the `install-zerotier-debian12.sh` script, ensure:
 
 If you are installing ZeroTier in a Proxmox LXC container, ensure:
 1. A Proxmox LXC container that is **PRIVILEGED**.
-2. You have edited the container's .conf file in /etc/pve/lxc/ and added the following lines:
+2. If the container is not yet privileged, you can create a backup and restore it by selecting the “Restore as privileged container”
+3. You have edited the container's .conf file in /etc/pve/lxc/ and added the following lines:
 ```bash
 lxc.cgroup2.devices.allow = c 10:200 rwm
 lxc.hook.autodev = sh -c "modprobe tun; cd ${LXC_ROOTFS_MOUNT}/dev; mkdir net; mknod net/tun c 10 200; chmod 0666 net/tun"
