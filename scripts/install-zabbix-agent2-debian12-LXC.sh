@@ -14,7 +14,11 @@ apt install zabbix-agent2 -y
 # 4. Habilitar e iniciar o serviço
 systemctl enable zabbix-agent2
 systemctl restart zabbix-agent2
+
 #Edite o arquivo /etc/zabbix/zabbix_agent2.conf conforme necessario.
+
+#EDITAR
 #Server = ip do servidor
 #ListenIP = ip do container
 #Hostname = Hostname do cliente
+#ServerActive=127.0.0.1 // COMENTAR
