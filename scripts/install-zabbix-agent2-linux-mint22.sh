@@ -19,6 +19,7 @@ systemctl restart zabbix-agent2
 #Server=127.0.0.1 //para o ip do Servidor Zabbix
 #ListenIP = ip do container
 #Hostname = Hostname do cliente
+#ServerActive=127.0.0.1 // COMENTAR
 
 systemctl restart zabbix-agent2
 
