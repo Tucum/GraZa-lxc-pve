@@ -27,3 +27,5 @@ systemctl restart zabbix-agent2
 
 #listar todas chaves possíveis para monitoramento
 #zabbix_agentd -p
+
+#usar o o template LINUX BY ZABBIX AGENT, quando for criar o host na GUI
