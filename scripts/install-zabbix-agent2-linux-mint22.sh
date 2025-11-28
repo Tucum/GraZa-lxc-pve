@@ -17,11 +17,8 @@ systemctl restart zabbix-agent2
 #nano /etc/zabbix/zabbix_agent2.conf
 # Alterar
 #Server=127.0.0.1 //para o ip do Servidor Zabbix
-#
-#ServerActive=127.0.0.1 //comentar se não for usar o Active
-#
-# Alterar o nome do Hostname se preciso
-#Hostname=pc-cliente
+#ListenIP = ip do container
+#Hostname = Hostname do cliente
 
 systemctl restart zabbix-agent2
 
