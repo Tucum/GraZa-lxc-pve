@@ -25,7 +25,7 @@ systemctl restart zabbix-agent2
 
 systemctl restart zabbix-agent2
 
-#Testar comunicação com o cliente - se for 1 está ok
+#Testar comunicação com o cliente no servidor zabbix- se for 1 está ok
 #zabbix_get -s {ip-cliente} -k "agent.ping"
 
 #listar todas chaves possíveis para monitoramento
